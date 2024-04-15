@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        $idade = prompt("Qual é a sua idade?")
+
+
+        if ($idade < 13 ) {
+            $res = "Criança"
+            $img="img/crianca/crianca.jpg"
+        }
+        if ($idade > 13 && $idade < 18) {
+            $res = "Adolescente"
+            $img="img/adolescente/adolescente.jpg"
+        }
+        if ($idade > 18 && $idade < 60) {
+            $res = "Adulto"
+            $img ="img/adulto/adulto.jpg"
+        }
+        if ($idade > 59) {
+            $res = "Idoso"
+            $img = "img/idoso/idoso.jpg"
+        }
+
+
+
+        
+        document.write("<center><font size = '5' font color = 'red'> Idade e Classificação </center></font>")
+        document.write("<table border = '1'>")
+        document.write("<tr>")
+        document.write("<td>", "Idade")
+        document.write("</td>")
+        document.write("<td", "Denominação")
+        document.write("</td>")
+        document.write("<td>", "Foto")
+        document.write("</tr>")
+
+        document.write("<tr>")
+        document.write("<td>", $idade)
+        document.write("</td>")
+        document.write("<td>", $res)
+        document.write("</td>")
+        document.write("</td>")
+        document.write("</td>")
+        document.write("<img  src='"+ $img +"'>")
+        document.write("</td>")
+       document.write ("</table>")
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
